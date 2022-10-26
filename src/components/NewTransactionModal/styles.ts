@@ -42,6 +42,7 @@ export const Content = styled(Dialog.Content)`
     button[type="submit"] {
       height: 58px;
       padding: 0 1.25rem;
+      margin-top: 1.5rem;
 
       border: 0;
       border-radius: 6px;
@@ -75,5 +76,39 @@ export const CloseButton = styled(Dialog.Close)`
   &:hover {
     color: ${({ theme }) => theme["gray-300"]};
     transition: color 0.2s;
+  }
+`;
+
+export const TransactionType = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+`;
+
+interface TransactionTypeButtonProps {
+  variant: "income" | "outcome";
+  isActive?: boolean;
+}
+
+export const TransactionTypeButton = styled.button<TransactionTypeButtonProps>`
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background-color: ${({ theme }) => theme["gray-700"]};
+  border: 0;
+  border-radius: 6px;
+
+  color: ${({ theme }) => theme["gray-300"]};
+
+  cursor: pointer;
+
+  svg {
+    color: ${({ variant, theme }) =>
+      variant === "income" ? theme["green-300"] : theme["red-300"]};
   }
 `;
