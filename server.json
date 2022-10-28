@@ -15,6 +15,30 @@
       "category": "Alimentação",
       "price": 56,
       "createdAt": "2022-10-26T21:30:50.446Z"
+    },
+    {
+      "description": "Bebidas",
+      "price": 120,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-10-28T23:03:08.992Z",
+      "id": 3
+    },
+    {
+      "description": "GBM Tech e Control",
+      "category": "Salário",
+      "price": 3000,
+      "type": "income",
+      "createdAt": "2022-10-28T23:05:47.098Z",
+      "id": 4
+    },
+    {
+      "description": "Teclado",
+      "category": "Periférico",
+      "price": 500,
+      "type": "outcome",
+      "createdAt": "2022-10-28T23:25:10.886Z",
+      "id": 5
     }
   ]
 }
